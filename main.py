@@ -1,8 +1,8 @@
-from Source.gravity import Engine
+from Source.gravity import Menu
 
 
 def main():
-    Engine().menu()
+    Menu().menu()
 
 
 if __name__ == "__main__":
