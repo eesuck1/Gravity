@@ -1,8 +1,6 @@
 import pygame
 import numpy
 
-from constans import FPS, SIZE
-
 
 class Ball:
     def __init__(self, coordinates: tuple[int, int] | pygame.math.Vector2, radius: int,
@@ -40,13 +38,6 @@ class Ball:
 
     def get_mass(self) -> float:
         return self.__mass__
-
-    def handle_box(self) -> None:
-        if not (0 < self.__rect__.x < SIZE[0] - self.__rect__.width):
-            self.__velocity__[0] *= -0.75
-        if not (0 < self.__rect__.y < SIZE[1] - self.__rect__.height):
-            self.__velocity__[0] *= 0.99
-            self.__velocity__[1] *= -0.75
 
     def get_color(self) -> tuple[int, int, int]:
         return self.__color__

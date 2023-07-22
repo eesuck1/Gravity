@@ -1,10 +1,9 @@
 import sys
 
 import pygame
-import numpy
 
-from ball import Ball
-from constans import SIZE, FPS, ANY_KEY, FONT
+from Source.ball import Ball
+from Source.constans import SIZE, FPS, ANY_KEY, FONT
 
 
 class Engine:
